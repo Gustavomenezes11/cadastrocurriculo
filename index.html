@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar - CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--page view-->
+    <header class="container">
+        <p id="azulview" onclick="azulview()">Modo azul</p>
+        <p id="verdeview" onclick="verdeview()">Modo verde</p> 
+    </header>
+    <!--titulo da pagina-->
+    <h1 id="titulopage">Cadastre seu Curriculo</h1>
+
+    <!--div principal dos inputs-->
+    <div class="dadospessoais">
+        <p id="txtinputs">Preencha com seus dados!</p>
+        <!--inicio dos inputs-->
+        <label>Digite seu nome:</label>
+        <input id="nome" type="text"  placeholder="Nome Completo" minlength="2" maxlength="30" name="nome" required>
+        <label>Data de nascimento</label>
+        <input id="data" type="date"  placeholder="Data de nascimento" name="data de nascimento" required>
+        <label>Telefone</label>
+        <input id="numero" type="number"  placeholder="(99) 99999999" minlength="13" maxlength="13" name="telefone" required>
+        <label>Digite seu email:</label>
+        <input id="email" type="email"  placeholder="exemplo@gmail.com" name="email" required>
+        <label>Cidade/Estado:</label>
+        <input id="cidade" type="text"  placeholder="Exemplo: Rio de Janeiro" name="localidade" required>
+    </div>
+
+    <div class="todosmodelos">
+   <!--parte modelo trabalho-->
+    <div class="modelotrabalho">
+        <h3>Modelo de trabalho:</h3>
+        <label>Presencial</label>
+        <input type="checkbox" placeholder="presencial" name="presencial">
+        <label>Hibrido</label>
+        <input type="checkbox" placeholder="hibrido" name="hibrido">
+        <label>Home Office</label>
+        <input type="checkbox" placeholder="homeoffice" name="homeoffice">
+    </div>
+
+      <!--parte modelo contratação-->
+    <div class="modelocontracacao">
+        <h3>Modelo de contratação:</h3>
+        <label>Estágio</label>
+        <input type="checkbox" placeholder="estagio" name="estagio">
+        <label>CLT</label>
+        <input type="checkbox" placeholder="clt" name="clt">
+        <label>PJ</label>
+        <input type="checkbox" placeholder="pj" name="pj">
+        <label>Jovem Aprendiz</label>
+        <input type="checkbox" placeholder="jovemaprendiz" name="jovemaprendiz">
+    </div>
+
+        <!--Área de atuação-->
+        <div class="areaatuacao">
+        <h3>Vagas:</h3>
+        <select>
+            <option>Área de atuação:</option>
+            <option>Administração</option>
+            <option>Contabilidade</option>
+            <option>Direito</option>
+            <option>Tecnologia(TI)</option>
+            <option>Comercial</option>
+            <option>Design</option>
+            <option>Fisioterapia</option>
+            <option>Odontologia</option>
+            <option>Educação Fisica</option>
+            <option>Outros</option>
+        </select>
+        <label>Informe caso escolha(Outros):</label>
+        <input type="text" placeholder="Ex: pedreiro">
+    </div>
+
+        <!--carregar curriculo-->
+        <div class="campocurriculo">
+        <label>Anexar curriculo ou Portifólio</label>
+        <input type="file" placeholder="anexar">
+    </div>
+    
+        <!--confirmar/enviar curriculo-->
+        <input type="button" id="botao" placeholder="Enviar Curriculo" value="Enviar Curriculo" onclick="botaoenviar()">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#titulopage{
+    position: absolute;
+    top: 3%;
+    left: 3%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #4169E1;
+    padding: 46px; 
+    width: 94%;  
+}
+.container #azulview{
+    position: absolute;
+    top: 18%;
+    left: 75%;
+}
+.container #verdeview{
+    position: absolute;
+    top: 18%;
+    left: 82%;
+}
+p:hover{
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+}
+.dadospessoais{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    width: 13%;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    background-color: #4169E1;
+    padding: 65px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px black;
+}
+.modelotrabalho{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 10px;
+}
+.modelocontracacao{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 10px;
+}
+.campocurriculo{
+    padding: 18px;
+}
+.areaatuacao{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 10px;
+}
+#botao{
+    margin-top: 134px;
+    margin-left: 200px;
+    padding: 5px;
+}
+#botao:hover{
+    background-color: #4169E1;
+}
+.todosmodelos {
+    background-color: #4169E1;
+    padding: 45px;
+    position: absolute;
+    top: 32%;
+    left: 43%;
+    width: 40%;
+    height: 30%;
+    margin-top: 5px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px black;
+}
